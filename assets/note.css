@@ -1,0 +1,283 @@
+:root {
+  --note-page: #faf9f5;
+  --note-paper: #faf9f5;
+  --note-text: #2b2621;
+  --note-muted: #72695e;
+  --note-border: #ddd5ca;
+  --note-surface: #f3ede5;
+  --note-code-bg: #f2eeea;
+  --note-accent: #bc6a3a;
+  --note-definition: #5d8f87;
+  --note-theorem: #a77945;
+  --note-algorithm: #6e82ad;
+  --note-formula: #8d7aa0;
+  --note-example: #74966b;
+  --note-proof: #d8cbbb;
+  --note-warning: #b96f57;
+}
+
+body {
+  background: var(--note-page);
+  color: var(--note-text);
+  line-height: 1.62;
+  letter-spacing: 0;
+  font-family: "Anthropic Serif", Georgia, "Times New Roman", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "PingFang SC", "Hiragino Sans GB", serif;
+}
+
+#write {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 32px 104px;
+  background: transparent;
+  box-shadow: none;
+  min-height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1c1815;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.84em;
+  line-height: 1.16;
+  margin: 0.35rem 0 0.9rem;
+}
+
+h2 {
+  font-size: 1.48em;
+  line-height: 1.2;
+  margin: 1.45rem 0 0.7rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+h3 {
+  font-size: 1.24em;
+  line-height: 1.32;
+  margin: 1.35rem 0 0.65rem;
+}
+
+p {
+  margin: 0.78em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.78em 0;
+  font-size: 0.95em;
+  border-top: 1px solid #cbb9a6;
+  border-bottom: 1px solid #cbb9a6;
+}
+
+th,
+td {
+  border: 0;
+  border-bottom: 1px solid rgba(114, 105, 94, 0.26);
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+
+th {
+  background: transparent;
+  font-weight: 700;
+}
+
+code,
+pre {
+  font-family: Menlo, Monaco, "SF Mono", Consolas, "Sarasa Mono SC", "Cascadia Code", monospace;
+}
+
+code {
+  background: var(--note-code-bg);
+  color: #b14a40;
+  padding: 0.08rem 0.24rem;
+  border-radius: 5px;
+}
+
+pre {
+  background: #fcfcfa;
+  border: 1px solid #e9e2d8;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0.78em 0;
+  padding: 0.58rem 1rem;
+  border-left: 2px solid var(--note-proof);
+  border-radius: 10px;
+  background: var(--note-surface);
+  color: #625950;
+  box-shadow: none;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote:has(.note-definition-title) {
+  border-left-color: var(--note-definition);
+}
+
+blockquote:has(.note-theorem-title),
+blockquote:has(.note-lemma-title),
+blockquote:has(.note-proposition-title) {
+  border-left-color: var(--note-theorem);
+}
+
+blockquote:has(.note-algorithm-title) {
+  border-left-color: var(--note-algorithm);
+}
+
+blockquote:has(.note-formula-title) {
+  border-left-color: var(--note-formula);
+}
+
+blockquote:has(.note-example-title) {
+  border-left-color: var(--note-example);
+}
+
+blockquote:has(.note-proof-title) {
+  border-left-color: var(--note-proof);
+}
+
+blockquote:has(.note-warning-title),
+blockquote:has(.note-caution-title) {
+  border-left-color: var(--note-warning);
+}
+
+.note-block {
+  margin: 0.78em 0;
+  padding: 0.58rem 1rem;
+  border: 0;
+  border-left: 2px solid var(--note-proof);
+  border-radius: 10px;
+  background: var(--note-surface);
+  box-shadow: none;
+}
+
+.note-block > :first-child {
+  margin-top: 0;
+}
+
+.note-block > :last-child {
+  margin-bottom: 0;
+}
+
+.note-title {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.note-definition-title {
+  color: var(--note-definition);
+}
+
+.note-theorem-title,
+.note-lemma-title,
+.note-proposition-title {
+  color: var(--note-theorem);
+}
+
+.note-algorithm-title {
+  color: var(--note-algorithm);
+}
+
+.note-formula-title {
+  color: var(--note-formula);
+}
+
+.note-example-title {
+  color: var(--note-example);
+}
+
+.note-proof-title {
+  color: var(--note-proof);
+}
+
+.note-warning-title,
+.note-caution-title {
+  color: var(--note-warning);
+}
+
+.note-definition {
+  border-left-color: var(--note-definition);
+}
+
+.note-theorem,
+.note-lemma,
+.note-proposition {
+  border-left-color: var(--note-theorem);
+}
+
+.note-algorithm {
+  border-left-color: var(--note-algorithm);
+}
+
+.note-formula {
+  border-left-color: var(--note-formula);
+}
+
+.note-example {
+  border-left-color: var(--note-example);
+}
+
+.note-proof {
+  border-left-color: var(--note-proof);
+}
+
+.note-warning,
+.note-caution {
+  border-left-color: var(--note-warning);
+}
+
+.note-block.note-compact {
+  padding: 0.65rem 0.85rem;
+}
+
+.note-block.note-proof {
+  background: #fbfaf7;
+}
+
+.note-block.note-algorithm ul,
+.note-block.note-algorithm ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.note-block.note-formula {
+  text-align: left;
+}
+
+.note-block.note-formula .math,
+.note-block.note-formula mjx-container {
+  margin: 0.35rem 0;
+}
+
+@media print {
+  #write {
+    max-width: none;
+    padding: 0;
+  }
+
+  .note-block {
+    break-inside: avoid;
+  }
+}

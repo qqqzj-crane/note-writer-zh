@@ -11,6 +11,10 @@ The skill emphasizes:
 - Chinese prose that is fluent and written, while keeping mathematical and technical conditions explicit;
 - a Typora-friendly `note.css` theme for clean note blocks.
 
+## Acknowledgement
+
+The writing cleanup rules in this skill were informed by `humanizer-zh`, especially its guidance on reducing formulaic openings, promotional wording, vague attribution, forced three-part structures, and other common machine-written patterns. The relevant guidance has been rewritten into this skill so `note-writer-zh` can be used independently without requiring `humanizer-zh` to be installed.
+
 ## Files
 
 - `SKILL.md`: the skill instructions.
@@ -36,4 +40,3 @@ Recommended Markdown block syntax:
 > - 基本思路：...
 > - 时间复杂度：...
 ```
-

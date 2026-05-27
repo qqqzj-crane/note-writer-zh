@@ -1,7 +1,7 @@
 interface:
   display_name: "中文笔记生成"
   short_description: "生成自然书面且严谨的中文笔记"
-  default_prompt: "Use $note-writer-zh to turn these materials into a natural, rigorous Chinese study note."
+  default_prompt: "使用 $note-writer-zh 将这些材料整理成自然、严谨、书面化的中文学习笔记。"
 
 policy:
   allow_implicit_invocation: true

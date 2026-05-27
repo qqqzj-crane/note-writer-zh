@@ -16,8 +16,15 @@
   --note-warning: #b96f57;
 }
 
+html,
+body,
+.typora-export,
+.typora-export-content {
+  background: var(--note-page) !important;
+  background-color: var(--note-page) !important;
+}
+
 body {
-  background: var(--note-page);
   color: var(--note-text);
   line-height: 1.62;
   letter-spacing: 0;
@@ -28,7 +35,8 @@ body {
   max-width: 780px;
   margin: 0 auto;
   padding: 32px 32px 104px;
-  background: transparent;
+  background: var(--note-page) !important;
+  background-color: var(--note-page) !important;
   box-shadow: none;
   min-height: auto;
 }
@@ -272,6 +280,15 @@ blockquote:has(.note-caution-title) {
 }
 
 @media print {
+  html,
+  body,
+  .typora-export,
+  .typora-export-content,
+  #write {
+    background: var(--note-page) !important;
+    background-color: var(--note-page) !important;
+  }
+
   #write {
     max-width: none;
     padding: 0;
